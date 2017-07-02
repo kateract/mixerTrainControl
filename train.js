@@ -13,7 +13,7 @@ const client = new BeamClient();
 
 client.use('oauth', {
     tokens: {
-        access: auth.getAuthKey(),
+        access: 'oiyxyQun0gD4Es2qNCH3nESfzWD5BwpdQ3AcZWgtjm2MQvNpz25y7znTKRKEx25e',
         expires: Date.now() + (365 * 24 * 60 * 60 * 1000)
     }
 });
@@ -206,7 +206,7 @@ function parseEmoteCommand(data, socket) {
 
 
 function setupPort() {
-    port = new SerialPort('COM3', {
+    port = new SerialPort('/dev/ttyACM0', {
         parser: SerialPort.parsers.readline('\n')
     });
     var counter = 0
