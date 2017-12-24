@@ -2,8 +2,8 @@
 
 const int SET_RATE_LIMIT = 1000;
 const int RATE_LIMIT_COOLDOWN = 60;
-const int MOVEMENT_RUN_TIME = 2;
-const int MOTOR_SPEED = 110;
+const int MOVEMENT_RUN_TIME = 10;
+const int MOTOR_SPEED = 200;
 
 
 AF_DCMotor motor(1, MOTOR12_64KHZ); // create motor #2, 64KHz pwm
